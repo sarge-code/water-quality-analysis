@@ -2,9 +2,8 @@
 
 A machine learning web application that predicts water potability using 12 classification models with real-time inference, confusion matrices, and Gemini AI expert analysis.
 
-🔗 **Live Demo:** https://shashank28-1999.github.io/water-quality-analysis/
-
-                  https://water-quality-analysis-clone.vercel.app/
+🔗 **Live Demo (Vercel):** https://water-quality-analysis-clone.vercel.app/
+🔗 **Live Demo (GitHub Pages):** https://shashank28-1999.github.io/water-quality-analysis/
 
 ---
 
@@ -81,74 +80,8 @@ This project analyzes water quality parameters to determine whether a water samp
 - Models exported as JSON for client-side inference
 
 **Deployment**
+- Vercel
 - GitHub Pages
-
----
-
-## 🚀 Run Locally
-
-**Prerequisites**
-- Node.js v18+
-- Python 3.8+
-
-**1. Clone the repo**
-```bash
-git clone https://github.com/shashank28-1999/water-quality-analysis.git
-cd water-quality-analysis
-```
-
-**2. Install dependencies**
-```bash
-npm install
-pip install pandas numpy scikit-learn xgboost
-```
-
-**3. Add your Gemini API key**
-```bash
-# Create .env file
-VITE_GEMINI_API_KEY=your_key_here
-```
-
-**4. Train models and export weights**
-```bash
-python scripts/train_export.py
-```
-
-**5. Start the app**
-```bash
-npm run dev
-```
-
----
-
-## 📁 Project Structure
-```
-water-quality-analysis/
-├── public/
-├── scripts/
-│   └── train_export.py       # Train models & export weights
-├── src/
-│   ├── components/
-│   │   ├── Dashboard.jsx     # Results dashboard
-│   │   ├── InputForm.jsx     # Parameter input form
-│   │   ├── ModelCard.jsx     # Individual model result
-│   │   └── ResultBanner.jsx  # Overall verdict
-│   ├── data/
-│   │   └── model_weights.json # Pre-trained model weights
-│   ├── utils/
-│   │   ├── gemini.js         # Gemini AI integration
-│   │   └── predict.js        # Client-side ML inference
-│   ├── App.jsx
-│   ├── index.css
-│   └── main.jsx
-├── .env                      # API keys (not committed)
-├── .gitignore
-├── index.html
-├── package.json
-└── vite.config.js
-```
-
----
 
 ## 👨‍💻 Author
 
