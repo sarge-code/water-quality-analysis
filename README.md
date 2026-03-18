@@ -153,9 +153,3 @@ water-quality-analysis/
 **Shashank**
 - College Project — Business Intelligence & Analytics
 - Dataset originally analyzed in R, rebuilt as a full-stack web application
-
----
-
-## 📄 License
-
-MIT License
