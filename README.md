@@ -3,6 +3,7 @@
 A machine learning web application that predicts water potability using 12 classification models with real-time inference, confusion matrices, and Gemini AI expert analysis.
 
 🔗 **Live Demo:** https://shashank28-1999.github.io/water-quality-analysis/
+                  https://water-quality-analysis-clone.vercel.app/
 
 ---
 
