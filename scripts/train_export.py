@@ -38,9 +38,9 @@ models = {
     "KNN":                 KNeighborsClassifier(n_neighbors=5),
     "Naive Bayes":         GaussianNB(),
     "Decision Tree":       DecisionTreeClassifier(max_depth=10, random_state=42),
-    "Random Forest":       RandomForestClassifier(n_estimators=100, random_state=42),
-    "Gradient Boosting":   GradientBoostingClassifier(n_estimators=100, random_state=42),
-    "Extra Trees":         ExtraTreesClassifier(n_estimators=100, random_state=42),
+    "Random Forest":       RandomForestClassifier(n_estimators=20, random_state=42),
+    "Gradient Boosting":   GradientBoostingClassifier(n_estimators=20, random_state=42),
+    "Extra Trees":         ExtraTreesClassifier(n_estimators=20, random_state=42),
     "AdaBoost":            AdaBoostClassifier(n_estimators=100, random_state=42),
     "SVM":                 SVC(probability=True, random_state=42),
     "Logistic Regression": LogisticRegression(max_iter=1000, random_state=42),
@@ -74,9 +74,9 @@ for name, model in models.items():
 dt  = DecisionTreeClassifier(max_depth=10, random_state=42).fit(X_train, y_train)
 lr  = LogisticRegression(max_iter=1000, random_state=42).fit(X_train, y_train)
 nb  = GaussianNB().fit(X_train, y_train)
-rf  = RandomForestClassifier(n_estimators=100, random_state=42).fit(X_train, y_train)
-gb  = GradientBoostingClassifier(n_estimators=100, random_state=42).fit(X_train, y_train)
-et  = ExtraTreesClassifier(n_estimators=100, random_state=42).fit(X_train, y_train)
+rf  = RandomForestClassifier(n_estimators=20, random_state=42).fit(X_train, y_train)
+gb  = GradientBoostingClassifier(n_estimators=20, random_state=42).fit(X_train, y_train)
+et  = ExtraTreesClassifier(n_estimators=20, random_state=42).fit(X_train, y_train)
 mlp = MLPClassifier(hidden_layer_sizes=(128, 64), max_iter=1000, random_state=42).fit(X_train, y_train)
 xgb = XGBClassifier(n_estimators=100, random_state=42, eval_metric="logloss", verbosity=0).fit(X_train, y_train)
 lda = LinearDiscriminantAnalysis().fit(X_train, y_train)
