@@ -3,7 +3,7 @@
 A machine learning web application that predicts water potability using 12 classification models with real-time inference, confusion matrices, and Gemini AI expert analysis.
 
 🔗 **Live Demo (Vercel):** https://water-quality-analysis-clone.vercel.app/
-🔗 **Live Demo (GitHub Pages):** https://sarge-code.github.io/water-quality-analysis/
+🔗 **Live Demo (GitHub Pages):** https://sarge2899.github.io/water-quality-analysis/
 
 ---
 
